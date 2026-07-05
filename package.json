@@ -1,0 +1,13 @@
+{
+  "name": "tab-split-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently \"npm run dev:web\" \"npm run dev:memory\"",
+    "dev:web": "cd apps/web && npm run dev",
+    "dev:memory": "cd services/memory-engine && uvicorn main:app --reload --port 8000"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

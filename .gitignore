@@ -4,3 +4,31 @@ node_modules/
 .next/
 .DS_Store
 *.pyc
+
+# Secrets
+.env.*
+!.env.example
+*.pem
+*.key
+
+# OS / editor
+Thumbs.db
+.idea/
+
+# Logs
+*.log
+
+# Node
+dist/
+build/
+out/
+.vercel/
+npm-debug.log*
+yarn-error.log*
+
+# Python
+*.py[cod]
+.venv/
+venv/
+.ipynb_checkpoints/
+.pytest_cache/
